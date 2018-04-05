@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: #ff6a00;
+    /* default before color change toggle */
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.quote-box {
+    margin: 100px 10%;
+    background-color: white;
+    padding: 30px;
+}
+
+.name {
+    text-align: right;
+}
+
+button {
+    border: 1px solid #ff6a00;
+    background-color: #ff6a00;
+    color: black;
+    width: 100px;
+    /* what we want to transition (all properties), how long */
+    transition: all 0.4s;
+    -webkit-transition: transition: background 0.3s;
+    -moz-transition: transition: background 0.3s;
+}
+
+button:hover {
+    border: 1px solid white;
+    color: #ff6a00;
+    background-color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+.alternate-button {
+    border: 1px solid #ee0979;
+    background-color: #ee0979;
+}
+
+.alternate-button:hover {
+    color: #ee0979;
+}
+
+.alternate-color {
+    color: #ee0979;
+}
